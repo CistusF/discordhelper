@@ -6,6 +6,6 @@ cd %LocalAppData%
 rmdir /S /Q  Discord
 rmdir /S /Q  discord
 
-bitsadmin.exe /transfer "JobName" https://discordapp.com/api/download?platform=win %USERPROFILE%\first.exe
+bitsadmin.exe /transfer "REDOWNLOAD" https://discordapp.com/api/download?platform=win %USERPROFILE%\first.exe
 start %USERPROFILE%first.exe
 pause
