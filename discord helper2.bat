@@ -1,7 +1,10 @@
 taskkill /f /im "discord.exe"
 cd %AppData%
-rmdir Discord
+rmdir /S /Q  Discord
+rmdir /S /Q  discord
 cd %LocalAppData%
-rmdir Discord
-powershell "(new-Object System.Net.WebClient).DownloadFile('https://discordapp.com/api/download?platform=win', '%USERPROFILE%\Desktop\first.exe')"
-start %USERPROFILE%\Desktop\first.exe
+rmdir /S /Q  Discord
+rmdir /S /Q  discord
+
+bitsadmin.exe /transfer "JobName" https://discordapp.com/api/download?platform=win %USERPROFILE%\first.exe
+pause
