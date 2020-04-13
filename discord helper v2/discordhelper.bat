@@ -10,6 +10,7 @@ bitsadmin.exe /transfer "REDOWNLOAD" https://discordapp.com/api/download?platfor
 start %USERPROFILE%first.exe
 start https://discord.gg/uF9bsPA
 echo del /q "first.exe" del /q "end.bat" > end.bat
+start
 cls
 echo 다운로드가 완료되었습니다.
 echo 다운이 끝날시
