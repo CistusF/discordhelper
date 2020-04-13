@@ -6,16 +6,18 @@ rmdir /S /Q  discord
 cd %LocalAppData%
 rmdir /S /Q  Discord
 rmdir /S /Q  discord
-bitsadmin.exe /transfer "REDOWNLOAD" https://discordapp.com/api/download?platform=win %USERPROFILE%\first.exe
+bitsadmin.exe /transfer "REDOWNLOAD" https://discordapp.com/api/download/ptb?platform=win %USERPROFILE%\first.exe
 start %USERPROFILE%first.exe
 start https://discord.gg/uF9bsPA
 echo x=msgbox("CMD의 내용을 읽어주세요" ,0, "다운로드 완료") >> msgbox.vbs
 start msgbox.vbs
+TIMEOUT /t 1
 del /q msgbox.vbs
-echo x=msgbox("즐거운 하루 되시길 바랍니다" ,0, "정크파일 삭제 완료") >> msgbox.vbs
+echo x=msgbox("즐거운 하루 되시길 바랍니다" ,0, "정크파일 삭제 완료") > msgbox.vbs
 echo start "msgbox.vbs" > end.bat
 echo del /q "first.exe" >> end.bat
-echo del /q "end.bat" >> end.bat
+echo del /q "end.bat" >> end.bae
+echo TIMEOUT /t 1
 echo del /q "msgbox.vbs" >> end.bat
 start
 cls
